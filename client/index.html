@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHESS LK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth">
+    <button onclick="window.location.href='/auth/google'">Login with Google</button>
+    <button onclick="window.location.href='/auth/github'">Login with GitHub</button>
+  </div>
+  <div id="userProfile" style="display: none;">
+    <img id="avatar" src="" alt="Avatar" style="width: 50px; height: 50px;">
+    <p id="username"></p>
+    <button onclick="window.location.href='/logout'">Logout</button>
+  </div>
+  <div id="board" class="chessboard"></div>
+  <div id="controls">
+    <button id="createGame">Create Game</button>
+    <button id="joinQueue">Join Matchmaking Queue</button>
+  </div>
+  <div id="chat">
+    <ul id="messages"></ul>
+    <input id="chatInput" placeholder="Type a message..." />
+    <button id="sendChat">Send</button>
+  </div>
+  <div id="leaderboard">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboardList"></ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard.min.js"></script>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="chess.js"></script>
+</body>
+</html>
