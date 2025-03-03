@@ -1,0 +1,36 @@
+{
+  "name": "chess-lk",
+  "version": "1.0.0",
+  "description": "A multiplayer chess app with social login, matchmaking, chat, and leaderboards.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/chess-lk.git" // Replace with your GitHub repo URL
+  },
+  "keywords": [
+    "chess",
+    "multiplayer",
+    "oauth",
+    "mongodb"
+  ],
+  "author": "Your Name <support@kingdevil.xyz>",
+  "license": "MIT",
+  "dependencies": {
+    "chess.js": "^0.13.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.5.0",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
